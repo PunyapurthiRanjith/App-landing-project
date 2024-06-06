@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .download_section{
+      width: 100%;
+     }
+     .download_content{
+      padding-top: 3%;
+      position: relative;
+      width: 50%;
+      height: 80%;
+      text-align: center;
+      margin-left: 25%;
+     }
+     .download_image{
+      position: absolute;
+     }
+     .fontsize1{
+      font-size: 3rem;
+      color: azure;
+     }
+     .fontsize2{
+      font-size: 1.1rem;
+      color: azure;
+      line-height: 35px;
+
+     }
+     .fontsize3{
+      font-size: 4rem;
+      color: azure;
+     }
+     .download_content h2:after{
+      content: '\22EF';
+     }
+     .download_content h2:before {
+      content: ' \22EF';
+     }
+
+
+     @media screen and (max-width:700px) {
+      .download_bg_img{
+      width: 100%;
+      height: 30vh;
+     }
+     .download_content{
+      width: 60%;
+      height: 25vh;
+      /* background-color: red; */
+      margin-left: 20%;
+     }
+
+     .fontsize1{
+      font-size: .8rem;
+      color: azure;
+     }
+     .fontsize2{
+      font-size: .51rem;
+      color: azure;
+      line-height: 12px;
+
+     }
+     .fontsize3{
+      font-size: 1.1rem;
+      color: azure;
+
+     }
+     .download_content button{
+      width: 100px;
+      height: 40px;
+      border: none;
+      margin-top: 5%;
+      box-shadow: 2px 2px 5px solid;
+     }
+
+     }
+     @media screen and (min-width:701px) and (max-width:1200px) {
+      .download_section{
+      width: 100%;
+     }
+     .download_content{
+      
+      padding-top: 10px;
+      position: relative;
+      width: 90%;
+      height: 80%;
+      text-align: center;
+      margin-left: 5%;
+     }
+     
+     .fontsize1{
+      font-size: 1.5rem;
+      color: azure;
+     }
+     .fontsize2{
+      font-size: 1rem;
+      color: azure;
+      line-height: 25px;
+
+     }
+     .fontsize3{
+      font-size: 2rem;
+      color: azure;
+     }
+     }
+     .download_content button{
+      width: 110px;
+      height: 25px;
+      border: none;
+      margin-top: 5%;
+      box-shadow: 2px 2px 5px solid;
+     }
+     
+    </style>
+</head>
+<body>
+    <div class="download_section">
+     <div class="download_image">
+      <img src="./images/download_background.jpg" alt="" width="100%">
+     </div>
+        <div class="download_content">
+            <h2 style="font-family: 'Trebuchet MS', sans-serif;" class="fontsize1" >Download</h2>
+            <p style="font-family: 'Trebuchet MS', sans-serif;" class="fontsize2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima laboriosam mollitia, voluptatibus commodi officia aperiam quibusdam cupiditate nam reprehenderit molestias aspernatur eum expedita.</p>
+            <h1 style="font-family: 'Trebuchet MS', sans-serif;" class="fontsize3">15,050,500</h1>
+            <p style="font-family: 'Trebuchet MS', sans-serif;" class="fontsize2">Over 15 million users on Google play store</p>
+            <button ><img src="./images/download_btn.png" alt="" width="100%" height="100%"></button>
+           </div>
+    </div>
+</body>
+</html>

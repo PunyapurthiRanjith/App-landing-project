@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact_main{
+            background-image: url(./images/pattern_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 130vh;
+            text-align: center;
+        }
+        .contact_text_section{
+            width: 50%;
+            height: 100vh;
+            text-align: center;
+            margin-left: 25%;
+            padding-top: 20px;
+        }
+        .contact_text1 p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 3rem;
+            color: whitesmoke;
+        }
+        .contact_text2 p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: azure;
+            font-size: 1rem;
+        }
+        .contact_text3{
+            display: flex;
+            background-color: transparent;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            
+        }
+        .social_media{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-left: 15%;
+            width: 70%;
+
+        }
+        .contact_text1 p::after{
+            content: ' \22EF';
+        }
+        .contact_text1 p::before{
+            content: ' \22EF';
+        }
+    </style>
+</head>
+<body>
+    <div class="contact_main">
+        <div class="contact_text_section">
+            <div class="contact_text1">
+                <p> Contact</p>
+            </div>
+            <div class="contact_text2">
+                <p><img src="./images/location.png" alt="">1234 Lincon Way, San Francisco, California</p>
+                <p><img src="./images/envelope.png" alt=""> Email: Info@company.com</p>
+                <p><img src="./images/phone.png" alt=""> Phone: 010-020-0340</p>
+            </div>
+            <div class="contact_text3">
+                <input style="border: none; border-bottom: 2px solid; padding-bottom: 5px; padding-top: 50px; width: 90%; font-size: 1rem; font-family: 'Trebuchet MS', sans-serif; background-color: transparent; color: rgb(173, 177, 182);" type="text" value="Name" required>
+                <input style="border: none; border-bottom: 2px solid; padding-bottom: 5px; padding-top: 50px; width: 90%; font-size: 1rem; font-family: 'Trebuchet MS', sans-serif; background-color: transparent; color: rgb(173, 177, 182);" type="email" value="Email" required>
+                <input style="border: none; border-bottom: 2px solid; padding-bottom: 80px; padding-top: 30px; width: 90%; font-size: 1rem; font-family: 'Trebuchet MS', sans-serif; background-color: transparent; color: rgb(173, 177, 182);" type="text" value="Message">
+                <input style="border: none; border-bottom: 2px solid; padding-bottom: 5px; padding-top: 20px; width: 40%; font-size: 1rem; font-family: 'Trebuchet MS', sans-serif; margin-left: 50%; margin-top: 25px; background-color: rgba(0, 200, 255, 0.927); opacity: 0.7; color: rgb(255, 255, 255);" type="submit" value="Send">
+            </div>
+            <div class="social_media">
+                <img src="./images/icons8-facebook-48.png" alt="">
+                <img src="./images/icons8-twitter-circled-48.png" alt="">
+                <img src="./images/icons8-youtube-48.png" alt="">
+                <img src="./images/icons8-instagram-48.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

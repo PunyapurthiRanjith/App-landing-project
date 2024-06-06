@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #feature_bg_img{
+            height: 100vh;
+            background-image: url(./images/pattern_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .feature_section{
+            width: 96vw;           
+            background-color: rgb(196, 191, 191);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            top: 30%;
+            left: 1%;
+        }
+        .card_1{
+            width: 255px;
+            height: 300px;
+            text-align: center;
+            align-content: center;
+            padding: 45px;
+            margin: 10px;
+            background-color: azure;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+            line-height: 22px;
+        }
+        .card_1:hover{
+            background-color: rgb(0, 166, 216);
+            transform: scale(1.05,1.2);
+            color: azure;
+        }
+        .feature_section:hover > .card_1:not(:hover){
+            filter: blur(10px);
+            transform: scale(0.95);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        }
+        @media screen and (max-width:480px) {
+            #feature_bg_img{
+                height: 300vh;
+            }
+            .feature_section{
+                position: absolute;
+                top: 10%;
+                left: .3%;
+            }
+            .card_1{
+                margin-top: 30px;
+            }
+            .feature_bg_img h1{
+                font-size: .5rem;
+            }
+        }
+        @media screen and (min-width:480px ) and (max-width:1200px) {
+            #feature_bg_img{
+                height: 300vh;
+            }
+            .feature_section{
+                position: absolute;
+                top: 10%;
+                left: .3%;
+            }
+        }
+        h1:after {
+            content: ' \22EF';
+        }
+        h1:before {
+            content: ' \22EF';
+        }  
+    </style>
+</head>
+<body>
+                  <!-- Features section Start -->
+     <div id="feature_bg_img">
+
+        <h1 style="text-align: center; padding-top: 60px; color: azure; font-family: 'Trebuchet MS', sans-serif; font-size: 3rem; "> Features </h1>
+        <img src="./images/pattern_bg.png" alt="" width="100%" >
+
+        <div class="feature_section">
+            <div class="card_1">
+                <img src="./images/music.png" alt="" height="50px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reiciendis recusandae nam nostrum autem tempore velit a culpa minima nobis, iusto non laboriosam ut architecto voluptas impedit ratione tempora? Suscipit.</p>
+            </div>
+            <div class="card_1">
+                <img src="./images/leaf.png" alt="" height="50px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quam architecto praesentium mollitia at similique non eius soluta quia necessitatibus corrupti tenetur a alias, quis pariatur numquam sunt veniam aliquid.</p>
+            </div>
+            <div class="card_1">
+                <img src="./images/shipping.png" alt="" height="50px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laborum officia, quo deleniti libero nemo maiores nesciunt assumenda dolorum! Ipsam ut consectetur unde cum ad repudiandae repellat labore culpa error?</p>
+            </div>
+            <div class="card_1">
+                <img src="./images/trophy.png" alt="" height="50px">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti, praesentium nulla architecto nihil ea, provident facere natus amet tempore voluptas magnam sunt veritatis assumenda exercitationem nemo atque nisi. Tempora?</p>
+            </div>
+        </div>
+     </div>
+                  <!-- Features section End -->
+</body>
+</html>
